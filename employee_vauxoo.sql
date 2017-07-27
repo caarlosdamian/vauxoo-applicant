@@ -3,6 +3,11 @@
 --       You can create database locally to test it.
 --       Consider add ';' at end sentence.
 
+-- DROP TABLE employee;
+-- DROP TABLE employee_department;
+-- DROP TABLE employee_hobby;
+-- DROP TABLE pasatiempo_hobby;
+
 CREATE TABLE employee_department (
      id serial PRIMARY KEY
     name varchar(50) NO NULL,

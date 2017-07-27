@@ -22,3 +22,4 @@ class PrimeClass(object):
                     return False
             #Si cumploe es numero primo
             return True
+        
