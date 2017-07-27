@@ -12,7 +12,7 @@ class PrimeClass(object):
         """
         Metodo para evaluar los numeros primos si cumplen o no lo requerido
         """
-        if num_int <2:
+        if num_int < 2:
              return False
         else:            
         # Cliclo para las diviciones del numero
