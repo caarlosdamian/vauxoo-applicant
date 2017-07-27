@@ -4,6 +4,7 @@
 --       Consider add ';' at end sentence.
 
 CREATE TABLE employee (
+    id serial PRIMARY KEY,
     departamento_id integer REFERENCES employee_departament,
     first_name varchar(50) NOT NULL,
     last_name varchar(50) NOT NULL
