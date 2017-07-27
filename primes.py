@@ -14,7 +14,6 @@ class PrimeClass(object):
         """
         if num_int < 2:
             return False
-        else:
             # Cliclo para las diviciones del numero
             for count in range(2, num_int):
                 # Se evalua el numero

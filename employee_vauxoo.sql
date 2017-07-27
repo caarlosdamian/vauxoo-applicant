@@ -30,10 +30,7 @@ CREATE TABLE pasatiempo_empleado(
     PRIMARY KEY (employee_id,hobby_id)
 );
 
-INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Carlos','Damian',1,4;
-INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Marcelo','Sanchez',5,4);
-INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Javier','Duarte',6,2);
-INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Enrique','Guzman',2,2);
+
 
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Herramientas','Se guardan Herramientas')
 INSERT INTO employee_department (name,description) VALUES ('Departamento de LActeos','Se guardan Lacteo')
@@ -41,6 +38,11 @@ INSERT INTO employee_department (name,description) VALUES ('Departamento de Enla
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Contabilidad','Se guardan a los Contadores')
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Computadoras','Se guardan Computadoras')
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Televisiones','Se guardan Televisiones')
+
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Carlos','Damian',1,4;
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Marcelo','Sanchez',5,4);
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Javier','Duarte',6,2);
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Enrique','Guzman',2,2);
 
 INSERT INTO employee_hobby (name,description) VALUES ('football','Jugar Retas');
 INSERT INTO employee_hobby (name,description) VALUES ('Matematica','Hacer algoritmos');

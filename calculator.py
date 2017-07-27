@@ -10,7 +10,7 @@ class CalculatorClass(object):
 
     def sum(self, num_list):
         """
-        Este metodo recibe una entrada de una lista de numeros y devuelve la suma de estos
+        Este metodo recibe lista de numeros y los suma
         """
         # En esta valiable se guardara la suma de los numeros
         resultado = 0
