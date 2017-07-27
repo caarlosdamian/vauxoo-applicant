@@ -18,6 +18,15 @@ CREATE TABLE employee_department (
 );
 
 CREATE TABLE employee_hobby (
+    id serial PRIMARY KEY,
+    name varchar(50) NOT NULL,
+    description varchar(100)NOT NULL
+);
+
+CREATE TABLE paatiempo_empleado(
+    employee_id integer REFERENCES employee,
+    hobby_id integer REFERENCES employee_hobby,
+    PRIMARY KEY (employee_id,hobby_id)
 );
 
 INSERT INTO employee (first_name,last_name,departamento_id) VALUES('Carlos','Damian',1);
@@ -31,6 +40,20 @@ INSERT INTO employee_department (name,description) VALUES ('Departamento de Enla
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Contabilidad','Se guardan a los Contadores')
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Computadoras','Se guardan Computadoras')
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Televisiones','Se guardan Televisiones')
+
+INSERT INTO employee_hobby (name,description) VALUES ('football','Jugar Retas');
+INSERT INTO employee_hobby (name,description) VALUES ('Matematica','Hacer algoritmos');
+INSERT INTO employee_hobby (name,description) VALUES ('Juegos Onlie','Jugar en la computadora');
+
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (1,1);
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (1,2);
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (2,3);
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (2,1);
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (3,2);
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (3,3);
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (4,2);
+INSERT INTO pasatiempo_empleado (employee_id,hobby_id) VALUES (4,1);
+
 
 
 -- ...
