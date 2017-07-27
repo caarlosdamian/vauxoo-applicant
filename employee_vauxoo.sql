@@ -3,6 +3,12 @@
 --       You can create database locally to test it.
 --       Consider add ';' at end sentence.
 
+CREATE TABLE employee_department (
+     id serial PRIMARY KEY
+    name varchar(50) NO NULL,
+    description varchar(100) NOT NULL
+);
+
 CREATE TABLE employee (
     id serial PRIMARY KEY,
     departamento_id integer REFERENCES employee_departament,
@@ -12,11 +18,7 @@ CREATE TABLE employee (
    
 );
 
-CREATE TABLE employee_department (
-     id serial PRIMARY KEY
-    name varchar(50) NO NULL,
-    description varchar(100) NOT NULL
-);
+
 
 CREATE TABLE employee_hobby (
     id serial PRIMARY KEY,
