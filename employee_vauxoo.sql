@@ -18,18 +18,13 @@ CREATE TABLE employee (
    
 );
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> a32ba1e5b6492c183dd6751b834e81d55b64248f
 CREATE TABLE employee_hobby (
     id serial PRIMARY KEY,
     name varchar(50) NOT NULL,
     description varchar(100)NOT NULL
 );
 
-CREATE TABLE paatiempo_empleado(
+CREATE TABLE pasatiempo_empleado(
     employee_id integer REFERENCES employee,
     hobby_id integer REFERENCES employee_hobby,
     PRIMARY KEY (employee_id,hobby_id)
