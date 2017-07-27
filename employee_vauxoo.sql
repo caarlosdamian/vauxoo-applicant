@@ -6,6 +6,7 @@
 CREATE TABLE employee (
     id serial PRIMARY KEY,
     departamento_id integer REFERENCES employee_departament,
+    jefe integer REFERENCES employee,
     first_name varchar(50) NOT NULL,
     last_name varchar(50) NOT NULL
    
@@ -29,10 +30,10 @@ CREATE TABLE paatiempo_empleado(
     PRIMARY KEY (employee_id,hobby_id)
 );
 
-INSERT INTO employee (first_name,last_name,departamento_id) VALUES('Carlos','Damian',1);
-INSERT INTO employee (first_name,last_name,departamento_id) VALUES('Marcelo','Sanchez',5);
-INSERT INTO employee (first_name,last_name,departamento_id) VALUES('Javier','Duarte',6);
-INSERT INTO employee (first_name,last_name,departamento_id) VALUES('Enrique','Guzman',2);
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Carlos','Damian',1,4;
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Marcelo','Sanchez',5,4);
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Javier','Duarte',6,2);
+INSERT INTO employee (first_name,last_name,departamento_id,jefe) VALUES('Enrique','Guzman',2,2);
 
 INSERT INTO employee_department (name,description) VALUES ('Departamento de Herramientas','Se guardan Herramientas')
 INSERT INTO employee_department (name,description) VALUES ('Departamento de LActeos','Se guardan Lacteo')
