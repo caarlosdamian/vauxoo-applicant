@@ -18,6 +18,11 @@ CREATE TABLE employee (
    
 );
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> a32ba1e5b6492c183dd6751b834e81d55b64248f
 CREATE TABLE employee_hobby (
     id serial PRIMARY KEY,
     name varchar(50) NOT NULL,
