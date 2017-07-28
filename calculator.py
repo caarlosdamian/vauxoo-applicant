@@ -1,23 +1,27 @@
 """
-Your module documentation here
+Programa que hace una
+suma de una lista de numeros
 """
 
 
 class CalculatorClass(object):
     """
-    Your class documentation here
+    Esta clase tiene un metodo sum
+    que tiene como parametros self
+    y num_list ,hace la suma de una
+    lista de numeros
     """
 
     def sum(self, num_list):
         """
-        Este metodo recibe lista de numeros y los suma
+        Metodo que recibe de entrada una lista de numeros
+        y regresa la suma de estos
         """
         # En esta valiable se guardara la suma de los numeros
         resultado = 0
-        # Cliclo para sumar los numeros de la liosta
+        # suma de los numeros
         for num in num_list:
-            # suma de los numeros
+            # suma del valor a la variable resultado
             resultado = resultado + num
         # Se regresa la variable resultado con la suma de los numeros
         return resultado
-    

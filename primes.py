@@ -1,16 +1,21 @@
 """
-Your module documentation here
+Este programa evalua si
+un numero es primo o no
 """
 
 
 class PrimeClass(object):
     """
-    Your class documentation here
+    Esta clase Evalua un numero
+    para saber si es primo
     """
     def is_prime(self, num_int):
         """
         Metodo para evaluar si un numero es primo o no
         """
+        if num_int < 2:
+                return False
+        else:
         # CLiclo para las diviciones del numero
         for count in range(2, num_int):
                 # Evaluacion del numero
