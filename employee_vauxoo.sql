@@ -9,7 +9,7 @@
 -- DROP TABLE pasatiempo_hobby;
 
 CREATE TABLE employee_department (
-     id serial PRIMARY KEY
+     id serial PRIMARY KEY,
     name varchar(50) NO NULL,
     description varchar(100) NOT NULL
 );

@@ -20,3 +20,4 @@ class CalculatorClass(object):
             resultado = resultado + num
         # Se regresa la variable resultado con la suma de los numeros
         return resultado
+    
