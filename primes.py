@@ -14,14 +14,13 @@ class PrimeClass(object):
         Metodo para evaluar si un numero es primo o no
         """
         if num_int < 2:
-                return False
-        else:
+            return False
         # CLiclo para las diviciones del numero
         for count in range(2, num_int):
-                # Evaluacion del numero
-                if (num_int % count) == 0:
-                    # Si es divdicible por otro numero resulta falso no primo
-                    return False
-            # Si Cumple es numero primo
-            return True
+            # Evaluacion del numero
+            if (num_int % count) == 0:
+                # Si es divdicible por otro numero resulta falso no primo
+                return False
+        # Si Cumple es numero primo
+        return True
         
