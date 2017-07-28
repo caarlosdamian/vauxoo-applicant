@@ -1,6 +1,3 @@
-"""
-Your module documentation here
-"""
 
 
 class CalculatorClass(object):
